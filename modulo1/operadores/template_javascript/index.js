@@ -28,7 +28,7 @@
 // RESPOSTA EXERCÍCIO DE ESCRITA DE CÓGIGOS
 // QUESTÃO 1.
 
-/*let idade = Number (prompt("Digite sua idade:"))
+let idade = Number (prompt("Digite sua idade:"))
 let idadeMelhorAmigo = Number (prompt ("Digite a idade do seu melhor migo:"))
 
 let resultado = (idade > idadeMelhorAmigo)
@@ -36,15 +36,16 @@ let diferencaIdades = (idade - idadeMelhorAmigo)
 
 console.log("Sua idade é maior que a do seu amigo?", resultado,".")
 
-console.log("A diferença de idade entre meu amigo e eu é de:", diferencaIdades, "anos de idade.") */
+console.log("A diferença de idade entre meu amigo e eu é de:", diferencaIdades, "anos de idade.") 
+
 
 
 // QUESTÃO 2.
 
-/*let numeroPar = Number (prompt("Insira um número PAR:"))
+let numeroPar = Number (prompt("Insira um número PAR:"))
 let resultdo = (numeroPar % 2)
 
-console.log(resultdo)*/
+console.log(resultdo)
 
 /*  LETRA C) O padrão que eu percebi é que o resto da divisão sempre será 0 independente do resultado dela.
 
@@ -52,9 +53,11 @@ console.log(resultdo)*/
 
 */
 
+
+
 // QUESTÃO 3.
 
-/*let idadeEmAnos = Number (prompt("Qual a sua idade?"))
+let idadeEmAnos = Number (prompt("Qual a sua idade?"))
 let idadeEmMeses = (idadeEmAnos*12)
 let idadeEmDias = (idadeEmMeses*30)
 let idadeEmHoras = (idadeEmDias*24)
@@ -62,7 +65,9 @@ let idadeEmHoras = (idadeEmDias*24)
 console.log("Sua idade é:", idadeEmAnos, "anos.")
 console.log("Sua idade em meses é:", idadeEmMeses, "meses.")
 console.log("Sua idade em dias é:", idadeEmDias, "dias.")
-console.log("Sua idade em horas é:", idadeEmHoras, "horas.")*/
+console.log("Sua idade em horas é:", idadeEmHoras, "horas.")
+
+
 
 // QUESTÃO 4. 
 
