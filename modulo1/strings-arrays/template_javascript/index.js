@@ -44,9 +44,12 @@ f) erro. pois a array não está definida.
 
     console.log(comidas);
 
-    for (let pos=0; pos<comidas.length;pos++) {
-        console.log(`essas são minhas comidas preferidas, ${comidas[pos]}`)
-        };
+    console.log(`essas são minhas comidas preferidas:`)
+    console.log(comidas[0])
+    console.log(comidas[1])
+    console.log(comidas[2])
+    console.log(comidas[3])
+    console.log(comidas[4])
     
 console.log(novaListaComidas);
 
@@ -55,13 +58,18 @@ console.log(novaListaComidas);
 let tarefa1 = prompt("diga uma tarefa que vc precisa fazer ao dia:")
 let tarefa2 = prompt("agora diga outra tarefa:")
 let tarefa3 = prompt("por último fale mais uma tarefa:")
-let indice = (prompt("agora digite um número de 1 a 3:"))
+let listaDeTarefas = [tarefa1, tarefa2, tarefa3]
 
- let listaDeTarefas = [tarefa1, tarefa2, tarefa3]
+console.log(listaDeTarefas)
+
+let indice = prompt("agora digite um número de 1 a 3:")
+
  
- let novalistaDeTarefas = [listaDeTarefas.splice(indice-1)]
+ listaDeTarefas.splice(indice-1)
 
  console.log(listaDeTarefas)
+
+
 
  
 
