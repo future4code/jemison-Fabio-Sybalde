@@ -176,12 +176,15 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-     let soma = 0
-     for(let i = 0; i < contas.compras.length; i++){
-         soma += contas.compras[i]
-     }
-     return soma
-}
+    let gasto1 = []
+    let gasto = contas.map((compra)=>{
+        if(compra.){
+        gasto1.push(compra.compras)
+        }
+    })
+    return gasto1
+}  
+
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
     
