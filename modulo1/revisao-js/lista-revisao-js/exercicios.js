@@ -58,16 +58,16 @@ function retornaMaiorNumero(array) {
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+ novoArray =[num1, num2]  // array pra armazenar os dois números
 
- novoArray =[num1, num2]
+  // Lógica pra descobrir o maior número
  let maiorNumero = novoArray[0]
-
     for(let i = 0; i < novoArray.length; i++){
         if(novoArray[i] > maiorNumero){
             maiorNumero = novoArray[i]          
         }  
     }
-
+     // Lógica pra saber a diferença entre os números
     function diferencaEntreNumeros(){
         let resultado
         if(num1<num2){
@@ -77,24 +77,22 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
         }
         return resultado
     }
-
+    // Lógica pra descobrir se um número é divisível pelo outro
     function divisivel(){
         if(num2 % num1 === 0){
            maiorDivisivelPorMenor = true
-    }else{
+        }else{
          maiorDivisivelPorMenor = false
      }
      return maiorDivisivelPorMenor
     }
-
+       // Novo objeto que vai receber os resultados das lógicas anteriores como propriedades
     newObjeto={
         maiorNumero: maiorNumero,
         maiorDivisivelPorMenor: divisivel(),
         diferenca: diferencaEntreNumeros()
     }
-
-  return newObjeto
-
+  return newObjeto // retorno do novo objeto
 }
 
 
@@ -201,18 +199,15 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-    novaData = []
+    let array1 = []
+   for(let i = 0; i < consultas.length; i++){
+
+    newObj = {
+       nome: consultas[i]['nome'],
+       dataDaConsulta: (consultas[i]['dataDaConsulta'])
+   }
+   array1.push(newObj)
    
-
-
- for(let i = 0; i < consultas.length; i++){
-
-     novoObj = {
-         nome: consultas[i]["nome"],
-         dataDaConsulta: consultas[i]['dataDaConsulta'].sort((a, b)=> a - b)
-     }
- 
-    novaData.push(novoObj)
- }
-return novaData
+}
+return array1
 }
