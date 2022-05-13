@@ -1,0 +1,18 @@
+        ******Resumo sobre o que eu entendi dos 7 paços para resolver problemas******
+
+
+     Os 7 paços para resolver um problema é uma estratégia que, eu particularmente, achei muito legal e importante. Resumindo bem, ela consiste em nas seguintes etapas:
+
+      ** leitura e atenção do enunciado; 
+      ** análise e retirada de informações ou palavras chave desse enunciado;
+      ** processo de pensamento e crição da lógica;
+      ** passagem dos pensmentos e esboços para o código em si, ou seja, a escrita de fato do código;
+      ** testagem e funcionalidade desse código;
+      ** por fim, se testado e funcionando, processo de refatoração ou arrumação e limpeza do código.
+
+      Acredito que esses paços vão me ajudar bastante principalmente nas minhas dificuldades que são,  
+    leitura e entendimento do que o enunciado está pedindo e a criação da lógica que está meio que relacionado com a primeira dificuldade já que, se eu não entendo o enunciado eu não sei que lógica usar.
+    
+
+    **Por fim, quero aqui agradecer e parabenizar a todos vcs da Labenu que fazem um trabalho educacional incrível além de serem pessoas maravilhosas. Estou amando o curso,  conhecer e conviver com vcs, com os colegas alunos e dizer que eu me sinto mais do que satisfeito, me sinto em casa.**
+
