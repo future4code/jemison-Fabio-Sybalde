@@ -176,15 +176,18 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-    let gasto1 = []
-    let gasto = contas.map((compra)=>{
-        if(compra.){
-        gasto1.push(compra.compras)
-        }
-    })
-    return gasto1
-}  
+    let novoSaldo = [] // array vazio
 
+    for(let i = 0; i < contas.length; i++){
+        novoObjeto ={
+            cliente: contas[i]['cliente'],
+            saldoTotal: (contas[i]['saldoTotal'] - contas[i]['compras'].reduce((prevVal, elem)=>prevVal+elem,0)),
+            compras: []
+         }
+    novoSaldo.push(novoObjeto)
+}
+return novoSaldo
+}
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
     
@@ -198,10 +201,18 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-    consultas.sort((a, b)=>{
-        if(a.dataDaConsulta > b.dataDaConsulta){
-            return true
-        }else return -2
-     })
-     return consultas
+    novaData = []
+   
+
+
+ for(let i = 0; i < consultas.length; i++){
+
+     novoObj = {
+         nome: consultas[i]["nome"],
+         dataDaConsulta: consultas[i]['dataDaConsulta'].sort((a, b)=> a - b)
+     }
+ 
+    novaData.push(novoObj)
+ }
+return novaData
 }
