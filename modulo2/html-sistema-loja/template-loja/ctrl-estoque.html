@@ -4,52 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estoque.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="shortcut icon" href="imagens/Bokehlicia-Captiva-Games.ico" type="image/x-icon">
     <title>Controle de Estoque</title>
 </head>
 <body>
-    <header>
-        <p>Fábio Game Store</p>
+
+    <header class="cabecalho">
+        <img class="cabecalho-logo" src="imagens/logo-gamer.png" alt="imagem da logomarca">
+        <nav class="cabecalho-menu">
+            <a class="item-menu" href="index.html">Página Inicial |</a>
+            <a class="item-menu" href="ctrl-estoque.html">Controle de Estoque |</a>
+            <a class="item-menu" href="add-produto.html">Adicionar produto |</a>
+            <a class="item-menu" href="funcionarios.html">Funcionários </a>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-    </nav>
 
-    <h2>Controle de Estoque</h2>
+    <br>
 
-    <table>
-        <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
+    <div class="estoque-titulo">
+        <h2>Controle de Estoque</h2>
+    </div>
+
+    <table class="estoque-tabela">
+        <tr class="estoque-linha-topo" id="topo">
+            <th class="items">Foto</th>
+            <th class="items">Descrição</th>
+            <th class="items">Preço (R$)</th>
+            <th class="items">Quantidade disponível</th>
         </tr>
 
-        <tr>
+        <tr class="estoque-linha">
             <td><img src="imagens/monitor-gamer200x200.jpg" alt="Monitor gamer"/></td>
             <td> Monitor 28" </td>
             <td> 548,90 </td>
             <td> 25 </td>
         </tr>
 
-        <tr>
+        <tr class="estoque-linha">
             <td><img src="imagens/teclado-gamer200x200.jpg" alt="Teclado Gamer"/></td>
             <td> Teclado Gamer </td>
             <td> 120,00 </td>
             <td> 30 </td>
         </tr>
         
-        <tr>
+        <tr class="estoque-linha">
             <td><img src="imagens/pc-gamer200x200.jpg" alt="PC Gamer"/></td>
             <td> PC Gamer </td>
             <td> 8.930,00 </td>
             <td> 15 </td>
         </tr>
         
-        <tr>
+        <tr class="estoque-linha">
             <td><img src="imagens/mouse-gamer200x200.jpg" alt="Mouse Gamer"/></td>
             <td> Mouse Gamer </td>
             <td> 65,00 </td>
@@ -57,7 +64,7 @@
         </tr>
         
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
-        <tr>
+        <tr class="estoque-linha">
             <td><img src="imagens/headset-gamer200x200.jpg" alt="HeadSet Gamer"/></td>
             <td> HeadSet Gamer </td>
             <td> 226,00 </td>
@@ -65,6 +72,17 @@
         </tr>
 
     </table>
+
+    <footer class="rodape">
+        <p>Siga-nos nas redes sociais!</p>
+        <div class="rodape-links">
+            <a href ="https://www.instagram.com/binhosybalde" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <br>
+            <a href="https://www.facebook.com/fabio.sybalde" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <br>
+            <a href="https://www.linkedin.com/in/fabio-silva-sybalde-622b6b122" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>

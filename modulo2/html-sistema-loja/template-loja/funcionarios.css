@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*    ***Reset Geral da página***   */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    ***Estilização geral do corpo***  */
+body{
+    background-image: linear-gradient(to bottom, rgb(140, 0, 255), rgb(212, 0, 255));
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*     ***Área do cabeçalho***   */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cabecalho-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.5em;
+}
+.cabecalho-menu a {
+    text-decoration: none;
+    color: rgb(240, 209, 209);
+}
+
+/*    ****Sessão central da página****    */
+.divisao-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: rgb(240, 209, 209);
+}
+
+/*   ****Área do rodapé da página****   */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: black;
+    border-top: 1px solid black;
+}
+.rodape p{
+    font-size: 1.4em;
+}
+.rodape-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 30px;
+}
+.rodape-links a{
+    text-decoration: none;
+    color: black;
+}
+
