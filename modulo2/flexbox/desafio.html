@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="cabecalho-div1"> <h2>Cabeçalho</h2></div>
+        <nav class="menu"> <h2>Menu</h2></nav>
+    </header>
+
+    <section class="sessao1">
+        <h2>Sessão 1</h2>
+
+    </section>
+    <section class="sessao2">
+        <div class="sessao2-divisao1">
+            <h2>Sessão2</h2>
+
+        </div>
+        <div class="sessao2-divisao2">
+            <h2>Sessão 3</h2>
+
+        </div>
+        <div class="sessao2-divisao3">
+            <div class="divisao3-div1">
+                <h2>Imagem</h2>
+
+            </div>
+            <div class="divisao3-div2">
+                <h2>Extra</h2>
+
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <h2>Rodapé</h2>
+
+    </footer>
+</body>
+
+<style>
+*{
+    margin: 0;
+   padding: 0;
+}
+
+.cabecalho{
+    display: flex;
+    height: 50px;
+   
+}
+
+.cabecalho-div1{
+    background-color: rgb(7, 194, 7);
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao1{
+    background-color: deeppink;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao2{
+    display: flex;
+    flex-direction: row;
+}
+
+.sessao2-divisao1{
+    background-color: blue;
+    height: 200px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao2-divisao2{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sessao2-divisao3{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.divisao3-div1{
+    background-color: red;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisao3-div2{
+    background-color: rgb(55, 241, 55);
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape{
+    background-color: blueviolet;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+</style>
+</html>
