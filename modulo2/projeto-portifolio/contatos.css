@@ -1,0 +1,130 @@
+@charset "UTF_8";
+
+/*   ****Reset geral da página**** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*   ****Estilização geral do corpo da página****   */
+body{
+    background-color: #D9C9BA;
+}
+
+/*   ****Cabeçalho da página****   */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.cabecalho-divisao1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nome-profissao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #664222;
+}
+.nome-profissao .nome{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #664222;
+}
+.nome-profissao .Profissao{
+    font-size: 1em;
+    font-weight: 700;
+    color: #735F4D;
+}
+.cabecalho-divisao1-imagem{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 3px;
+    background-color: #664222;
+}
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1.6em;
+    margin: 0 20px;
+}
+.item-menu{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: #664222;
+    position: relative;
+}
+.item-menu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #664222;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.item-menu:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/*    ****Conteúdo principal da página****   */
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #664222;
+    margin-bottom: 30px;
+}
+.contatos-subtitulo{
+    font-size: 2em;
+}
+.contatos-subtitulo a{
+    text-decoration: none;
+    color: #664222;
+}
+.contatos-subtitulo  .fa-linkedin{
+    color: rgb(33, 33, 240);
+}
+.contatos-subtitulo .fa-github{
+    color: black;
+}
+.contatos-subtitulo .fa-instagram{
+    color: rgb(255, 51, 0);
+}
+.contatos-subtitulo .fa-facebook{
+    color: rgb(33, 33, 240);
+}
+.contatos-paragrafo{
+    font-size: 1.3em;
+}
+
+/*   ****Rodapé da página****  */
+.rodape{
+    font-size: 1.5em;
+    padding: 15px;
+    border-top: 2px solid #664222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #664222;
+}
