@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @charset "UTF-8";
+
+        /*       *****Reset da página*****     */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*       *****Cabeçalho da página******      */
+        .cabecalho{
+            display: grid;
+            grid-template-columns: 80% 20%;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: orangered;
+        }
+        #search{
+            width: 90px;
+            height: 25px;
+        }
+
+        /*       *****Conteúdo principal da página******      */
+        h1{
+            margin: 10px 0px 10px 280px
+        }
+        .area-do-video{
+            display: grid;
+            grid-template-rows: 10% 90%;
+            justify-items: center;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /*       ******Rodapé da página*****     */
+        .rodape{
+            display: grid;
+            grid-template-columns: 80% 10%;
+            border-top: 1px solid black;
+            font-size: 1.2em;
+            padding: 15px;
+            background-color: orangered;
+        }
+        .rodape > a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+            background-color: rgb(179, 58, 14);
+            width: 80px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+    <title>LabeTube</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>LabeTube</h2>
+        <input type="search" name="search" id="search" placeholder="Procurar...">
+    </header>
+
+    <h1>Vídeo 2</h1>
+
+    <div class="area-do-video">
+        <video class="video1" width="800px" src="https://storage.googleapis.com/future-apis.appspot.com/2.mp4" controls></video>
+    </div>
+
+    <footer class="rodape">
+        <p>Feito por <strong>Fábio Silva Sybalde</strong> para fins didáticos.</p>
+
+        <a href="index.html">Voltar</a>
+    </footer>
+</body>
+</html>
