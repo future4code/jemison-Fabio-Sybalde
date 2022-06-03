@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    background-color: mediumvioletred;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 50px;
+}
+
+.titulo > img{
+    width: 20px;
+    height: 20px;
+}
+
+.area-principal{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f2d0e0;
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+
+}
+
+.menu-itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 140px;
+}
+
+
+.menu-itens > img{
+    width: 20px;
+}
+
+.nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.nome > img{
+    width: 20px;
+}
+
+.nome > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.seta{
+    margin-left: 30px;
+}
+
+
+
+.area-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.473);
+    text-align: center;
+    gap: 5px;
+}
+
+.card > h2{
+    font-size: 19px;
+}
+
+.card > p{
+    font-size: 13px;
+}
+
+.rodape{
+    text-align: center;
+    background-color: mediumvioletred;
+}
+
